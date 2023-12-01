@@ -43,10 +43,10 @@ favoriteEl.setAttribute("style", "font-size:20px;");
 // TODO: Add ordered list items containing four favorite foods
 
 listEl.setAttribute("style", "color:#333333; padding:20px");
-li1.setAttribute("style", "color:white; padding:5px; margin-left:35px; background-color:blue");
-li2.setAttribute("style", "color:white; padding:5px; margin-left:35px; background-color:green");
-li3.setAttribute("style", "color:white; padding:5px; margin-left:35px; background-color:purple");
-li4.setAttribute("style", "color:white; padding:5px; margin-left:35px; background-color:yellow");
+li1.setAttribute("style", "color:black; padding:5px; margin-left:35px; background-color:blue");
+li2.setAttribute("style", "color:black; padding:5px; margin-left:35px; background-color:green");
+li3.setAttribute("style", "color:black; padding:5px; margin-left:35px; background-color:purple");
+li4.setAttribute("style", "color:black; padding:5px; margin-left:35px; background-color:yellow");
 
 
 listEl.appendChild(li1);
