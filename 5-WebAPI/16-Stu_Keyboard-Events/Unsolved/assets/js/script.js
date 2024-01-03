@@ -9,6 +9,8 @@ function keydownAction(event) {
   const keyCode= event.code
   key.textContent=keyPress
   code.textContent=keyCode
+  console.log(event)
+  
   //1.) When a user pressses a keydown i want it to have an event status of KEYDOWN Event
   // TODO: Complete keydown function
   document.querySelector("#status").innerHTML= "KEYDOWN Event";
@@ -19,6 +21,9 @@ function keyupAction() {
 // TODO: Add Event Listener for "keydown" event
 document.addEventListener("keydown", keydownAction);
 document.addEventListener("keyup", keyupAction);
+
+
+
 
 
 

@@ -1,5 +1,6 @@
 // Use Day.js to format the date and assign to the declared variable.
-dayjs().format()
+const gradDate= dayjs('2023-09-18').format('MMM DD, YYYY')
+$("#1a").text(`My graduation date is ${gradDate}`)
 // TODO: 1. What is your graduation date in the following format: Jan 1, 1999?
 dayjs().format()
 // TODO: 2. What day of the week will 1/1/2027 be? (e.g. Is it "Monday"?)
