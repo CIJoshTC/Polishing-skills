@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+    <body>
+        <h1>Server side API's</h1>
+        <div id="setup"></div>
+        <div id="delivery"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            fetch("https://v2.jokeapi.dev/joke/Any?safe-mode").then(function(response){
+                return response.json();
+            }).then(function(data){
+                console.log(data)
+                if(data.joke){
+                    $("#setup").text(data.joke);
+                }else{
+                    $("#setup").text(data.setup);
+                    setTimeout(function(){
+                        $("#delivery").text(data.delivery);
+
+                    },5000);
+                }
+            })
+
+
+        </script>
+    </body>
+
+
+
+
+</html>
